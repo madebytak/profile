@@ -1,10 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Oswald:wght@500&display=swap');
 
+.background-photo {
+  background-image: url("images/bg-04.jpg");
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  z-index: -1;
+  background-size: cover;
+}
 
 .container {
   width: 800px;
   margin: 0 auto;
 }
+
 
 .img-square {
   width: 200px;
@@ -15,9 +25,11 @@
 body {
   font-family: 'Lato';
   font-size: 18px;
+  margin: 40px auto;
   color: #FAFAFA;
-  background: rgb(2,0,36);
-  background: linear-gradient(45deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+  background:#1e1e1e;
+  /* background: rgb(2,0,36);
+  background: linear-gradient(45deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%); */
 /* background: -webkit-linear-gradient(top left, #C31433, #240C36);
 background: -moz-linear-gradient(top left, #C31433, #240C36);
 background: linear-gradient(to bottom right, #C31433, #240C36); */
@@ -39,15 +51,12 @@ h1 {
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.31);
+  border: 1px solid rgba(16, 173, 65, 0.31);
   margin: 40px auto;
   text-align: center;
   padding: 18px;
 }
 
-/* .background-photo {
-  background-image: url("images/bg-03.jpg");
-} */
 
 a {
   color: #FAFAFA;
@@ -57,14 +66,14 @@ a {
 
 .btn-white {
   background-color: #fafafa;
-  color: rgba(9,9,121,1);
+  color: #10ad41;
   padding: 8px 16px;
   box-shadow: rgba(254, 254, 254, 0.16) 0px 1px 4px;
   border-radius: 4px;
 }
 
 .btn-white:hover {
-  background-color: rgba(9,9,121,1);
+  background-color: #10ad41;
   color: #FAFAFA;
 }
 
@@ -82,5 +91,26 @@ a {
 }
 
 a:hover {
-  color: #83ccdb;
+  color: #10ad41;
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
 }
