@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Oswald:wght@500&display=swap');
+
+
+.container {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.img-square {
+  width: 200px;
+  height: 200px;
+  border-radius: 4px;
+}
+
+body {
+  font-family: 'Lato';
+  font-size: 18px;
+  color: #FAFAFA;
+  background: rgb(2,0,36);
+  background: linear-gradient(45deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+/* background: -webkit-linear-gradient(top left, #C31433, #240C36);
+background: -moz-linear-gradient(top left, #C31433, #240C36);
+background: linear-gradient(to bottom right, #C31433, #240C36); */
+}
+
+h1, h2 {
+  font-family: 'Oswald';
+  letter-spacing: .5px;
+}
+
+h1 {
+  font-family: 'Oswald';
+  font-size: 40px;
+}
+
+.card-glass{
+  background: rgba(255, 255, 255, 0.09);
+  border-radius: 8px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.31);
+  margin: 40px auto;
+  text-align: center;
+  padding: 18px;
+}
+
+/* .background-photo {
+  background-image: url("images/bg-03.jpg");
+} */
+
+a {
+  color: #FAFAFA;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.btn-white {
+  background-color: #fafafa;
+  color: rgba(9,9,121,1);
+  padding: 8px 16px;
+  box-shadow: rgba(254, 254, 254, 0.16) 0px 1px 4px;
+  border-radius: 4px;
+}
+
+.btn-white:hover {
+  background-color: rgba(9,9,121,1);
+  color: #FAFAFA;
+}
+
+.list-inline {
+  padding: 0;
+}
+
+.list-inline a {
+  font-size: 48px;
+}
+
+.list-inline > li {
+  display: inline-block;
+  margin: 18px;
+}
+
+a:hover {
+  color: #83ccdb;
+}
